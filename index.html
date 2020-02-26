@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whatsapp Any Number</title>
-</head>
+  </head>
 
-<body>
-    
-    <a href="#" id="a-link">Click Me </a>
+  <body>
+    <a id="link" href="#"></a>
+  </body>
 
-    <script>
-        var number = prompt("Enter mobile number: ");
-        var linkText = ("https://wa.me/91"+ number +"?text=Hi")
-        document.getElementById('a-link').setAttribute('href' , linkText);
-    </script>
-</body>
+  <script>
+    const number = prompt("Enter mobile number: ");
+    const linkText = "https://wa.me/91" + number + "?text=Hi";
+    const link = document.getElementById("link");
+    link.href = linkText;
+    link.click();
+  </script>
 </html>
