@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whatsapp Any Number</title>
 </head>
+
 <body>
+    
+    <a href="#" id="a-link">Click </a>
+
     <script>
         var number = prompt("Enter mobile number: ");
-        window.open("https://wa.me/91"+ number +"?text=Hi")
+        var linkText = ("https://wa.me/91"+ number +"?text=Hi")
+        document.getElementById('a-link').setAttribute('href' , linkText);
     </script>
 </body>
 </html>
